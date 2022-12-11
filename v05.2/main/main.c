@@ -83,7 +83,6 @@ int	is_whitespace(char *line)
 void	main_init(int argc, char *argv[])
 {
 	struct termios	term;
-
 	if (argc != 1)
 		exit_with_err("argument input error", NULL, 126);
 	tcgetattr(0, &term);
